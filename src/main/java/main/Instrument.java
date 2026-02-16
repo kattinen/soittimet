@@ -15,5 +15,9 @@ public class Instrument {
         this.price = price;
     }
 
+    public String getDetails() {
+        return "Valmistaja: " + manufacturer + ", Hinta: " + price + "e";
+    }
+
     
 }
