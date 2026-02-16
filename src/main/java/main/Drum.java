@@ -7,6 +7,6 @@ public class Drum extends Instrument {
         }
         
         public void playBeat() {
-            System.out.println("X rummut soittavat komppia!");
+            System.out.println(this.manufacturer + " rummut soittavat komppia!");
         }
 }
