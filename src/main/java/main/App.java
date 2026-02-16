@@ -41,8 +41,8 @@ public class App {
                             int numberOfStrings = 6;
                             Guitar guitar = new Guitar(manufacturer, price, numberOfStrings);
                         } else if (type == 2) {
-                            int numberOfStrings = 4;
-                            Violin violin = new Violin(manufacturer, price, numberOfStrings);
+                            //int numberOfStrings = 4;
+                            Violin violin = new Violin(manufacturer, price);
                         } else if (type == 3) {
                             Drum drum = new Drum(manufacturer, price);
                         } else {
