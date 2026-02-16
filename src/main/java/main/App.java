@@ -30,22 +30,23 @@ public class App {
                 switch(i) {
                     case 1:
                         System.out.println("Minkä soittimen haluat lisätä? 1) Kitara, 2) Viulu, 3) Rummut");
-                        String instrumentType = sc.nextLine();
+                        String typeString = sc.nextLine();
+                        int type = Integer.parseInt(typeString);
                         System.out.println("Anna valmistajan nimi:");
                         String manufacturer = sc.nextLine();
                         System.out.println("Anna hinta euroina:");
                         String priceInput = sc.nextLine();
                         int price = Integer.parseInt(priceInput);
-                        if (instrumentType.equals("1")) {
+                        if (type == 1) {
                             int numberOfStrings = 6;
                             Guitar guitar = new Guitar(manufacturer, price, numberOfStrings);
-                        } else if (instrumentType.equals("2")) {
+                        } else if (type == 2) {
                             int numberOfStrings = 4;
                             Violin violin = new Violin(manufacturer, price, numberOfStrings);
-                        } else if (instrumentType.equals("3")) {
+                        } else if (type == 3) {
                             Drum drum = new Drum(manufacturer, price);
                         } else {
-                            System.out.println("Syöte oli väärä.");
+                            System.out.println("Virheellinen soitinvalinta.");
                         }
                         // Soitin on lisätty listaan!
                         break;
