@@ -1,7 +1,7 @@
 // Soittimet
 // Instrument.java
 // Kati Liukkonen
-// Luokkien perityminen
+// Luokkien periytyminen
 // Visual Studio code, Java 21, Maven
 
 package main;
@@ -19,5 +19,4 @@ public class Instrument {
         return "Valmistaja: " + manufacturer + ", Hinta: " + price + "e";
     }
 
-    
 }

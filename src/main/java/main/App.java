@@ -1,7 +1,7 @@
 // Soittimet
 // App.java
 // Kati Liukkonen
-// Luokkien perityminen
+// Luokkien periytyminen
 // Visual Studio code, Java 21, Maven
 
 package main;
@@ -65,10 +65,18 @@ public class App {
                         }
                         break;
                     case 3:
-                        // Viritä kielisoittimet
+                        for (Instrument instrument : Instruments) {
+                            if (instrument instanceof StringInstrument) {
+                                ((StringInstrument) instrument).tune();
+                            }
+                        }
                         break;
                     case 4:
-                        // Soita rumpuja
+                        for (Instrument instrument : Instruments) {
+                            if (instrument instanceof Drum) {
+                                ((Drum) instrument).playBeat();
+                            }
+                        }
                         break;
                     case 0:
                         System.out.println("Kiitos ohjelman käytöstä.");
@@ -78,14 +86,8 @@ public class App {
                         System.out.println("Syöte oli väärä.");
                         break;
                 }
-
             }
         }
-
-        
-        
-       
         sc.close();
-    }
-
+    }  
 }

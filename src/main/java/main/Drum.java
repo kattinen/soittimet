@@ -1,3 +1,9 @@
+// Soittimet
+// Drum.java
+// Kati Liukkonen
+// Luokkien periytyminen
+// Visual Studio code, Java 21, Maven
+
 package main;
 
 public class Drum extends Instrument {
@@ -9,4 +15,5 @@ public class Drum extends Instrument {
         public void playBeat() {
             System.out.println(this.manufacturer + " rummut soittavat komppia!");
         }
+
 }

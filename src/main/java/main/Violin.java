@@ -1,7 +1,7 @@
 // Soittimet
 // Violin.java
 // Kati Liukkonen
-// Luokkien perityminen
+// Luokkien periytyminen
 // Visual Studio code, Java 21, Maven
 
 package main;
