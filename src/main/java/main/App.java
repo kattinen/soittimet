@@ -42,15 +42,15 @@ public class App {
                         if (type == 1) {
                             Guitar guitar = new Guitar(manufacturer, price);
                             Instruments.add(guitar);
-                            System.out.println("Soitin on lisätty listaan!");
+                            System.out.println("Soitin lisätty listaan!");
                         } else if (type == 2) {
                             Violin violin = new Violin(manufacturer, price);
                             Instruments.add(violin);
-                            System.out.println("Soitin on lisätty listaan!");
+                            System.out.println("Soitin lisätty listaan!");
                         } else if (type == 3) {
                             Drum drum = new Drum(manufacturer, price);
                             Instruments.add(drum);
-                            System.out.println("Soitin on lisätty listaan!");
+                            System.out.println("Soitin lisätty listaan!");
                         } else {
                             System.out.println("Virheellinen soitinvalinta.");
                         }
