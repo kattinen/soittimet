@@ -6,13 +6,15 @@
 
 package main;
 
+import java.util.ArrayList;
 import java.util.Scanner;
-
 
 public class App {
     public static void main(String[] args) {
         
         Scanner sc = new Scanner(System.in);
+
+        ArrayList<Instrument> Instruments = new ArrayList<>();
 
         boolean exit = false;
         while (!exit) {
@@ -39,17 +41,28 @@ public class App {
                         int price = Integer.parseInt(priceInput);
                         if (type == 1) {
                             Guitar guitar = new Guitar(manufacturer, price);
+                            Instruments.add(guitar);
+                            System.out.println("Soitin on lisätty listaan!");
                         } else if (type == 2) {
                             Violin violin = new Violin(manufacturer, price);
+                            Instruments.add(violin);
+                            System.out.println("Soitin on lisätty listaan!");
                         } else if (type == 3) {
                             Drum drum = new Drum(manufacturer, price);
+                            Instruments.add(drum);
+                            System.out.println("Soitin on lisätty listaan!");
                         } else {
                             System.out.println("Virheellinen soitinvalinta.");
                         }
-                        // Soitin on lisätty listaan!
                         break;
                     case 2:
-                        // Listaa soittimet
+                        if (Instruments.size() == 0)  {
+                            System.out.println("Ei lisättyjä soittimia.");
+                        } else {
+                            for (Instrument instrument : Instruments) {
+                                System.out.println(instrument.getDetails());
+                            }
+                        }
                         break;
                     case 3:
                         // Viritä kielisoittimet
